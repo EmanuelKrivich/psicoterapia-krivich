@@ -1,0 +1,113 @@
+#index {
+    background-color: rgb(247, 247, 244);
+    display: grid;
+    grid-template-columns: .5fr .5fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr .5fr;
+    grid-template-areas:
+        "menu menu menu menu"
+        "texto1 texto1 imagenTerapia imagenTerapia"
+        "texto2 texto2 imagenTerapia imagenTerapia"
+        "footer footer footer footer"
+    ;
+    height: 100vh
+}
+
+.imagenTerapia {
+    grid-area: imagenTerapia;
+
+    img {
+        width: 40vw;
+        margin-left: 200px;
+        border: solid rgb(177, 102, 102);
+        margin-top: 20px;
+
+        &:hover {
+            filter: blur(2px);
+            transition: .5s;
+        }
+    }
+}
+
+.texto1 {
+    grid-area: texto1;
+
+    p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 2px;
+        word-spacing: 7px;
+        font-weight: 500;
+        color: rgb(177, 102, 102);
+        border: solid rgb(80, 84, 145);
+        border-radius: 3%;
+        padding: 10px 10px 10px 10px;
+        margin-top: 50px;
+        margin-left: 50px;
+
+        &:hover {
+            -webkit-animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both;
+            animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both
+        }
+    }
+}
+
+.texto2 {
+    grid-area: texto2;
+
+    p {
+        font-family: Cambria,
+            Cochin,
+            Georgia,
+            Times,
+            'Times New Roman',
+            serif;
+        letter-spacing: 2px;
+        word-spacing: 7px;
+        font-weight: 500;
+        color: rgb(80, 84, 145);
+        border: solid rgb(177, 102, 102);
+        border-radius: 3%;
+        padding: 10px 10px 10px 10px;
+        margin-left: 50px;
+        margin-top: 20px;
+
+        &:hover {
+            -webkit-animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both;
+            animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both
+        }
+    }
+}
+
+
+
+
+@-webkit-keyframes shadow-drop-2-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-box-shadow: 0 0 0 0 transparent;
+        box-shadow: 0 0 0 0 transparent
+    }
+
+    100% {
+        -webkit-transform: translateZ(50px);
+        transform: translateZ(50px);
+        -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)
+    }
+}
+
+@keyframes shadow-drop-2-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-box-shadow: 0 0 0 0 transparent;
+        box-shadow: 0 0 0 0 transparent
+    }
+
+    100% {
+        -webkit-transform: translateZ(50px);
+        transform: translateZ(50px);
+        -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35)
+    }
+}

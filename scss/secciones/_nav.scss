@@ -1,0 +1,60 @@
+.menu {
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-image: linear-gradient(to right, rgb(69, 123, 157), rgb(80, 84, 145));
+    width: 100%;
+
+    a {
+        text-decoration: none;
+        color: navajowhite;
+
+        &:hover {
+            color: rgb(221, 120, 120);
+        }
+    }
+
+    &__ul {
+        display: flex;
+        list-style: none;
+        font-size: 1.5rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: antiquewhite;
+        padding-right: 2vw;
+        border-bottom: solid 1px antiquewhite;
+
+        &:hover {
+            color: rgb(221, 120, 120);
+            transition: .5s;
+        }
+
+        li {
+            padding-right: 1.5vw;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: .5s;
+            }
+        }
+    }
+
+    &__logo {
+        font-family: 'Cinzel', serif;
+        letter-spacing: 3px;
+        font-size: 2rem;
+        border-bottom: solid 1px antiquewhite;
+        margin-left: 50px;
+
+        &:hover {
+            color: rgb(221, 120, 120);
+            transition: .5s;
+        }
+
+
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+}

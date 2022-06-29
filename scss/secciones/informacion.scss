@@ -1,0 +1,67 @@
+.contenedorInformacion {
+    background-color: rgb(247, 247, 244);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr .2fr 1fr 1fr .5fr;
+    grid-template-areas:
+        "menu menu menu menu"
+        "subtitulo subtitulo subtitulo subtitulo"
+        "textoInfo textoInfo video video"
+        "textoInfo textoInfo video video"
+        "footer footer footer footer";
+    height: 100vh;
+}
+
+// ACA PUEDO AGREGAR EXPAND Y MIXIN
+
+
+
+
+.textoInfo {
+    grid-area: textoInfo;
+    max-width: 650px;
+
+    .textoInfo1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 2px;
+        word-spacing: 7px;
+        font-weight: 500;
+        color: rgb(177, 102, 102);
+        border: solid rgb(80, 84, 145);
+        border-radius: 3%;
+        padding: 10px 10px 10px 10px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    .textoInfo2 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 2px;
+        word-spacing: 7px;
+        font-weight: 500;
+        color: rgb(80, 84, 145);
+        border: solid rgb(177, 102, 102);
+        border-radius: 3%;
+        padding: 10px 10px 10px 10px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+}
+
+.video {
+    grid-area: video;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 2px;
+        word-spacing: 7px;
+        font-weight: 500;
+        color: rgb(80, 84, 145);
+        border-left: solid rgb(177, 102, 102);
+        padding-left: 10px;
+        margin-bottom: 50px;
+    }
+}

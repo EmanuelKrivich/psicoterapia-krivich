@@ -1,0 +1,24 @@
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(221, 120, 120), #5f1638);
+
+    a {
+        i {
+            font-size: 2rem;
+            margin: .5rem;
+            color: antiquewhite;
+
+            &:hover {
+                color: rgb(69, 123, 157);
+                transform: scale(1.1);
+                transition: .3s;
+            }
+        }
+    }
+}
+
+
+

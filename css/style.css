@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.cursiva {
+  font-style: oblique;
+  font-weight: bold;
+  color: #171c47;
+  padding-bottom: 5px; }
+
+.subtitulo {
+  grid-area: subtitulo;
+  color: #2e2457;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  border-top: solid 1px #505491;
+  margin-left: 2.5vw; }
+
+.menu {
+  grid-area: menu;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-image: linear-gradient(to right, #457b9d, #505491);
+  width: 100%; }
+  .menu a {
+    text-decoration: none;
+    color: navajowhite; }
+    .menu a:hover {
+      color: #dd7878; }
+  .menu__ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    padding-right: 2vw;
+    border-bottom: solid 1px antiquewhite; }
+    .menu__ul:hover {
+      color: #dd7878;
+      transition: .5s; }
+    .menu__ul li {
+      padding-right: 1.5vw; }
+      .menu__ul li:hover {
+        transform: scale(1.1);
+        transition: .5s; }
+  .menu__logo {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    border-bottom: solid 1px antiquewhite;
+    margin-left: 50px; }
+    .menu__logo:hover {
+      color: #dd7878;
+      transition: .5s; }
+  .menu .navbar-collapse {
+    justify-content: flex-end; }
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #dd7878, #5f1638); }
+  .footer a i {
+    font-size: 2rem;
+    margin: .5rem;
+    color: antiquewhite; }
+    .footer a i:hover {
+      color: #457b9d;
+      transform: scale(1.1);
+      transition: .3s; }
+
+#index {
+  background-color: #f7f7f4;
+  display: grid;
+  grid-template-columns: .5fr .5fr 1fr 1fr;
+  grid-template-rows: .5fr 1fr 1fr .5fr;
+  grid-template-areas: "menu menu menu menu" "texto1 texto1 imagenTerapia imagenTerapia" "texto2 texto2 imagenTerapia imagenTerapia" "footer footer footer footer";
+  height: 100vh; }
+
+.imagenTerapia {
+  grid-area: imagenTerapia; }
+  .imagenTerapia img {
+    width: 40vw;
+    margin-left: 200px;
+    border: solid #b16666;
+    margin-top: 20px; }
+    .imagenTerapia img:hover {
+      filter: blur(2px);
+      transition: .5s; }
+
+.texto1 {
+  grid-area: texto1; }
+  .texto1 p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    font-weight: 500;
+    color: #b16666;
+    border: solid #505491;
+    border-radius: 3%;
+    padding: 10px 10px 10px 10px;
+    margin-top: 50px;
+    margin-left: 50px; }
+    .texto1 p:hover {
+      -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.texto2 {
+  grid-area: texto2; }
+  .texto2 p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    font-weight: 500;
+    color: #505491;
+    border: solid #b16666;
+    border-radius: 3%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 50px;
+    margin-top: 20px; }
+    .texto2 p:hover {
+      -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent; }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35); } }
+
+@keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent; }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35); } }
+
+.contenedorContacto {
+  background-color: #f7f7f4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .5fr .2fr 1fr 1fr .5fr;
+  grid-template-areas: "menu menu menu menu" "subtitulo subtitulo formualrio formualrio" "formulario formulario formulario formulario" "formulario formulario formulario formulario" "footer footer footer footer";
+  height: 100vh; }
+
+.formulario {
+  grid-area: formulario;
+  display: flex; }
+  .formulario .datos {
+    margin-left: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 10px;
+    height: 32vh; }
+    .formulario .datos input {
+      margin-bottom: 10px; }
+    .formulario .datos select {
+      margin-bottom: 10px; }
+  .formulario .consultas {
+    margin-left: 20vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
+    height: 15vh; }
+
+.contenedorServicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .2fr .8fr .8fr .2fr;
+  grid-template-areas: "menu menu menu menu" "slider-servicios slider-servicios slider-servicios slider-servicios" "slider-servicios slider-servicios slider-servicios slider-servicios" "footer footer footer footer"; }
+
+.slider-servicios {
+  grid-area: slider-servicios; }
+  .slider-servicios h3 {
+    font-family: 'Cinzel', serif; }
+    .slider-servicios h3:hover {
+      transform: scale(1.1);
+      color: #dd7878;
+      transition: .5s; }
+  .slider-servicios p:hover {
+    transform: scale(1.1);
+    color: #dd7878;
+    transition: .5s; }
+  .slider-servicios img:hover {
+    filter: blur(3px);
+    transition: 1s; }
+
+.contenedorInformacion {
+  background-color: #f7f7f4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .5fr .2fr 1fr 1fr .5fr;
+  grid-template-areas: "menu menu menu menu" "subtitulo subtitulo subtitulo subtitulo" "textoInfo textoInfo video video" "textoInfo textoInfo video video" "footer footer footer footer";
+  height: 100vh; }
+
+.textoInfo {
+  grid-area: textoInfo;
+  max-width: 650px; }
+  .textoInfo .textoInfo1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    font-weight: 500;
+    color: #b16666;
+    border: solid #505491;
+    border-radius: 3%;
+    padding: 10px 10px 10px 10px;
+    margin-top: 50px;
+    margin-left: 50px; }
+  .textoInfo .textoInfo2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    font-weight: 500;
+    color: #505491;
+    border: solid #b16666;
+    border-radius: 3%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 50px;
+    margin-top: 20px; }
+
+.video {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .video p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    font-weight: 500;
+    color: #505491;
+    border-left: solid #b16666;
+    padding-left: 10px;
+    margin-bottom: 50px; }
+
+.contenedorNosotros {
+  background-color: #f7f7f4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .5fr .2fr 1fr 1fr .5fr;
+  grid-template-areas: "menu menu menu menu" "subtitulo subtitulo subtitulo subtitulo" "textoNosotros textoNosotros accordionNosotros accordionNosotros" "textoNosotros textoNosotros formularioNosotros formularioNosotros" "footer footer footer footer";
+  height: 100vh; }
+
+.textoNosotros {
+  grid-area: textoNosotros;
+  max-width: 650px; }
+
+.formularioNosotros form {
+  grid-area: formularioNosotros;
+  border-left: solid #b16666;
+  margin-left: 50px;
+  padding-left: 10px;
+  position: relative;
+  right: 50px;
+  bottom: 20px; }
+
+.accordionNosotros {
+  grid-area: accordionNosotros;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }

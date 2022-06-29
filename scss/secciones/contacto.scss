@@ -1,0 +1,42 @@
+.contenedorContacto {
+    background-color: rgb(247, 247, 244);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr .2fr 1fr 1fr .5fr;
+    grid-template-areas:
+        "menu menu menu menu"
+        "subtitulo subtitulo formualrio formualrio"
+        "formulario formulario formulario formulario"
+        "formulario formulario formulario formulario"
+        "footer footer footer footer"
+    ;
+    height: 100vh;
+}
+
+.formulario {
+    grid-area: formulario;
+    display: flex;
+
+    .datos {
+        margin-left: 2vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding-left: 10px;
+        height: 32vh;
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        select {
+            margin-bottom: 10px;
+        }
+    }
+
+    .consultas {
+        margin-left: 20vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 5px;
+        height: 15vh;
+    }
+
+}

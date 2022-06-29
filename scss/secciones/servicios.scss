@@ -1,0 +1,38 @@
+.contenedorServicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .2fr .8fr .8fr .2fr;
+    grid-template-areas:
+        "menu menu menu menu"
+        "slider-servicios slider-servicios slider-servicios slider-servicios"
+        "slider-servicios slider-servicios slider-servicios slider-servicios"
+        "footer footer footer footer";
+}
+
+.slider-servicios {
+    grid-area: slider-servicios;
+
+    h3 {
+        font-family: 'Cinzel', serif;
+
+        &:hover {
+            transform: scale(1.1);
+            color: rgb(221, 120, 120);
+            transition: .5s;
+        }
+    }
+
+    p:hover {
+        transform: scale(1.1);
+        color: rgb(221, 120, 120);
+        transition: .5s;
+
+    }
+
+    img:hover {
+        filter: blur(3px);
+        transition: 1s;
+
+    }
+
+}
