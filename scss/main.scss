@@ -11,8 +11,15 @@
 }
 
 .subtitulo {
-    @extend %subtitulo;
+    grid-area: subtitulo;
+    color: rgb(46, 36, 87);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    border-top: solid 1px rgb(80, 84, 145);
+    margin-left: 2.5vw;
 }
+
 @import './variables/colores';
 @import './variables/extend.scss';
 @import './secciones/nav';

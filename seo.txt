@@ -1,0 +1,29 @@
+CAMBIOS DE SEO:
+
+--Agrupé los html de las páginas del sitio (excepto index) en la carpeta "pages" para favorecer la jerarquización.
+
+- index: 
+agregué las siguientes keywordss-- "psicologo, terapia, terapia virtual, psicoterapia, ansiedad, depresion"
+y la siguiente descripcion-- "Servicio de psicoterapia virtual".
+también el siguiente title-- Inicio | Psicoterapia
+
+- contacto: 
+keywords-- "contacto, consultas, datos, turnos, agenda, terapia"
+descripcion-- "Agendar un turno para psicoterapia virtual"
+title-- Contacto | Psicoterapia
+
+- informacion:
+keywords-- "terapia cognitiva, pensamiento, emociones, conducta, video, principios, beck"
+descripcion-- "marco teórico de la terapia cognitiva"
+title-- Informacion | Psicoterapia
+
+- servicios:
+keywords-- "servicios, psicoterapia, individual, pareja, grupal, estres"
+descripcion-- "Servicios terapéuticos que ofrecemos"
+title-- Servicios | Psicoterapia
+
+- nosotros:
+keywords-- "profesionales, psicologos, especialistas, ansiedad, problemas"
+descripcion-- "Nuestro equipo se conforma de profesionales licenciados en psicología formados en terapias basadas en evidencia"
+title-- Nosotros | Psicoterapia
+
