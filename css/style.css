@@ -8,6 +8,32 @@
   color: #171c47;
   padding-bottom: 5px; }
 
+.texto1 p, .textoInfo .textoInfo1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 2px;
+  word-spacing: 7px;
+  font-weight: 500;
+  border-radius: 3%;
+  padding: 10px 10px 10px 10px;
+  margin-top: 50px;
+  margin-left: 50px; }
+  .texto1 p:hover, .textoInfo .textoInfo1:hover {
+    -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.texto2 p, .textoInfo .textoInfo2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 2px;
+  word-spacing: 7px;
+  font-weight: 500;
+  border-radius: 3%;
+  padding: 10px 10px 10px 10px;
+  margin-left: 50px;
+  margin-top: 20px; }
+  .texto2 p:hover, .textoInfo .textoInfo2:hover {
+    -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
 .subtitulo {
   grid-area: subtitulo;
   color: #2e2457;
@@ -94,16 +120,8 @@
 .texto1 {
   grid-area: texto1; }
   .texto1 p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    letter-spacing: 2px;
-    word-spacing: 7px;
-    font-weight: 500;
     color: #b16666;
-    border: solid #505491;
-    border-radius: 3%;
-    padding: 10px 10px 10px 10px;
-    margin-top: 50px;
-    margin-left: 50px; }
+    border: solid #505491; }
     .texto1 p:hover {
       -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
@@ -111,16 +129,8 @@
 .texto2 {
   grid-area: texto2; }
   .texto2 p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    letter-spacing: 2px;
-    word-spacing: 7px;
-    font-weight: 500;
     color: #505491;
-    border: solid #b16666;
-    border-radius: 3%;
-    padding: 10px 10px 10px 10px;
-    margin-left: 50px;
-    margin-top: 20px; }
+    border: solid #b16666; }
     .texto2 p:hover {
       -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
@@ -209,27 +219,11 @@
   grid-area: textoInfo;
   max-width: 650px; }
   .textoInfo .textoInfo1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    letter-spacing: 2px;
-    word-spacing: 7px;
-    font-weight: 500;
     color: #b16666;
-    border: solid #505491;
-    border-radius: 3%;
-    padding: 10px 10px 10px 10px;
-    margin-top: 50px;
-    margin-left: 50px; }
+    border: solid #505491; }
   .textoInfo .textoInfo2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    letter-spacing: 2px;
-    word-spacing: 7px;
-    font-weight: 500;
     color: #505491;
-    border: solid #b16666;
-    border-radius: 3%;
-    padding: 10px 10px 10px 10px;
-    margin-left: 50px;
-    margin-top: 20px; }
+    border: solid #b16666; }
 
 .video {
   grid-area: video;

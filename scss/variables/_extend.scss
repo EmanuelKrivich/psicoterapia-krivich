@@ -1,0 +1,47 @@
+// EXTEND
+
+%estilosTexto1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    font-weight: 500;
+    border-radius: 3%;
+    padding: 10px 10px 10px 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+
+    &:hover {
+        -webkit-animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both;
+        animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both
+    }
+}
+
+
+%estilosTexto2 {
+    font-family: Cambria,
+        Cochin,
+        Georgia,
+        Times,
+        'Times New Roman',
+        serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    font-weight: 500;
+    border-radius: 3%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+
+    &:hover {
+        -webkit-animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both;
+        animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both
+    }
+}
+
+// MIXIN
+
+@mixin estiloTextos ($colorTexto1, $bordeTexto1) {
+    color: $colorTexto1;
+    border: $bordeTexto1;
+}
+

@@ -1,5 +1,5 @@
 #index {
-    background-color: rgb(247, 247, 244);
+    background-color: $colorFondo;
     display: grid;
     grid-template-columns: .5fr .5fr 1fr 1fr;
     grid-template-rows: .5fr 1fr 1fr .5fr;
@@ -32,16 +32,8 @@
     grid-area: texto1;
 
     p {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        letter-spacing: 2px;
-        word-spacing: 7px;
-        font-weight: 500;
-        color: rgb(177, 102, 102);
-        border: solid rgb(80, 84, 145);
-        border-radius: 3%;
-        padding: 10px 10px 10px 10px;
-        margin-top: 50px;
-        margin-left: 50px;
+        @extend %estilosTexto1;
+        @include estiloTextos($colorTexto1, $bordeTexto1);
 
         &:hover {
             -webkit-animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both;
@@ -53,22 +45,11 @@
 .texto2 {
     grid-area: texto2;
 
-    p {
-        font-family: Cambria,
-            Cochin,
-            Georgia,
-            Times,
-            'Times New Roman',
-            serif;
-        letter-spacing: 2px;
-        word-spacing: 7px;
-        font-weight: 500;
-        color: rgb(80, 84, 145);
-        border: solid rgb(177, 102, 102);
-        border-radius: 3%;
-        padding: 10px 10px 10px 10px;
-        margin-left: 50px;
-        margin-top: 20px;
+    p { 
+
+        @extend %estilosTexto2;
+        @include estiloTextos($colorTexto2, $bordeTexto2);
+    
 
         &:hover {
             -webkit-animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both;
