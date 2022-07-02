@@ -98,27 +98,35 @@
       transform: scale(1.1);
       transition: .3s; }
 
-#index {
+.contenedorIndex {
   background-color: #f7f7f4;
   display: grid;
-  grid-template-columns: .5fr .5fr 1fr 1fr;
-  grid-template-rows: .5fr 1fr 1fr .5fr;
-  grid-template-areas: "menu menu menu menu" "texto1 texto1 imagenTerapia imagenTerapia" "texto2 texto2 imagenTerapia imagenTerapia" "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .3fr .1fr 1fr 1fr .3fr;
+  grid-template-areas: "menu menu menu menu" "subtitulo subtitulo subtitulo subtitulo" "texto1 texto1 imagenTerapia imagenTerapia" "texto2 texto2 imagenTerapia imagenTerapia" "footer footer footer footer";
   height: 100vh; }
+
+.titular {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 .imagenTerapia {
   grid-area: imagenTerapia; }
   .imagenTerapia img {
     width: 40vw;
-    margin-left: 200px;
     border: solid #b16666;
-    margin-top: 20px; }
+    margin-top: 100px;
+    margin-left: 80px; }
     .imagenTerapia img:hover {
       filter: blur(2px);
       transition: .5s; }
 
 .texto1 {
-  grid-area: texto1; }
+  grid-area: texto1;
+  margin-top: 50px;
+  margin-left: 100px;
+  max-width: 750px; }
   .texto1 p {
     color: #b16666;
     border: solid #505491; }
@@ -127,7 +135,10 @@
       animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 .texto2 {
-  grid-area: texto2; }
+  grid-area: texto2;
+  margin-top: 50px;
+  margin-left: 100px;
+  max-width: 750px; }
   .texto2 p {
     color: #505491;
     border: solid #b16666; }
@@ -159,6 +170,16 @@
     -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35); } }
 
+@media (max-width: 480px) {
+  .contenedorIndex {
+    grid-template-rows: .2fr 1fr 1fr .3fr;
+    grid-template-areas: "menu menu menu menu" "texto1 texto1 texto1 texto1" "texto2 texto2 texto2 texto2" "footer footer footer footer";
+    height: 100vh; }
+  .imagenTerapia {
+    display: none; }
+  .texto1 p, .texto2 p {
+    margin: 15px auto; } }
+
 .contenedorContacto {
   background-color: #f7f7f4;
   display: grid;
@@ -188,11 +209,21 @@
 .contenedorServicios {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: .2fr .8fr .8fr .2fr;
-  grid-template-areas: "menu menu menu menu" "slider-servicios slider-servicios slider-servicios slider-servicios" "slider-servicios slider-servicios slider-servicios slider-servicios" "footer footer footer footer"; }
+  grid-template-rows: .3fr 1fr 1fr .3fr;
+  grid-template-areas: "menu menu menu menu" "slider-servicios slider-servicios cards cards" "slider-servicios slider-servicios cards cards" "footer footer footer footer";
+  height: 100vh; }
+
+.main {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
 
 .slider-servicios {
-  grid-area: slider-servicios; }
+  grid-area: slider-servicios;
+  max-width: 850px;
+  margin-top: 100px;
+  border: solid #505491; }
   .slider-servicios h3 {
     font-family: 'Cinzel', serif; }
     .slider-servicios h3:hover {
@@ -206,6 +237,15 @@
   .slider-servicios img:hover {
     filter: blur(3px);
     transition: 1s; }
+
+.cards {
+  grid-area: cards;
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: .1fr .1fr;
+  grid-template-rows: .1fr .1fr;
+  grid-template-areas: "card1 card2" "card3 card4"; }
 
 .contenedorInformacion {
   background-color: #f7f7f4;
