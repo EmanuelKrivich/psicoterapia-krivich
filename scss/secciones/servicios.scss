@@ -21,10 +21,10 @@
     .slider-servicios {
         grid-area: slider-servicios;
         max-width: 850px;
-        
+
         border: $bordeTexto1;
 
-        .carousel-caption{
+        .carousel-caption {
             display: flex;
             justify-content: center;
         }
@@ -36,14 +36,24 @@
 
         }
 
-        .card{
+        .card {
             color: black;
-            background-color: $colorFondo;
+            font-family: Cambria,
+                Cochin,
+                Georgia,
+                Times,
+                'Times New Roman',
+                serif;
+            letter-spacing: 2px;
+            font-size: 1rem;
+            font-weight: 500;
+            background-color: rgb(255, 247, 236);
             opacity: .5;
-            &:hover{
+
+            &:hover {
                 opacity: 1;
                 transition: 1s;
-                
+
             }
         }
     }
@@ -59,10 +69,25 @@
             "card1 card2"
             "card3 card4";
 
-        .card{
+        h5 {
+            text-align: center;
+            color: #505491;
+        }
+
+        .card {
+            background-color: rgb(255, 247, 236);
+            border: $bordeTexto2;
+            font-family: Cambria,
+                Cochin,
+                Georgia,
+                Times,
+                'Times New Roman',
+                serif;
+
             &:hover {
                 @extend %animacionHover;
             }
         }
+
     }
 }

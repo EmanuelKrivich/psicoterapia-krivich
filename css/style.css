@@ -235,7 +235,11 @@
       transition: 1s; }
     .main .slider-servicios .card {
       color: black;
-      background-color: linear-gradient(180deg, #FFFFFF 0%, #a3afd6 39%, #c97d7d 100%);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      letter-spacing: 2px;
+      font-size: 1rem;
+      font-weight: 500;
+      background-color: #fff7ec;
       opacity: .5; }
       .main .slider-servicios .card:hover {
         opacity: 1;
@@ -248,18 +252,28 @@
     grid-template-columns: .1fr .1fr;
     grid-template-rows: .1fr .1fr;
     grid-template-areas: "card1 card2" "card3 card4"; }
+    .main .cards h5 {
+      text-align: center;
+      color: #505491; }
+    .main .cards .card {
+      background-color: #fff7ec;
+      border: solid #505491;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 .contenedorInformacion {
-  background-color: linear-gradient(180deg, #FFFFFF 0%, #a3afd6 39%, #c97d7d 100%);
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #a3afd6 39%, #c97d7d 100%);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: .5fr .2fr 1fr 1fr .5fr;
+  grid-template-rows: .3fr .1fr 1fr 1fr .3fr;
   grid-template-areas: "menu menu menu menu" "subtitulo subtitulo subtitulo subtitulo" "textoInfo textoInfo video video" "textoInfo textoInfo video video" "footer footer footer footer";
   height: 100vh; }
+  .contenedorInformacion .subtitulo {
+    margin-left: 62px; }
 
 .textoInfo {
   grid-area: textoInfo;
-  max-width: 650px; }
+  max-width: 650px;
+  margin-left: 150px; }
   .textoInfo .textoInfo1 {
     color: antiquewhite;
     border: solid #b16666; }
@@ -276,11 +290,12 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 2px;
     word-spacing: 7px;
-    font-weight: 500;
+    font-weight: 700;
     color: #505491;
     border-left: solid #b16666;
     padding-left: 10px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    max-width: 850px; }
 
 .contenedorNosotros {
   background-color: linear-gradient(180deg, #FFFFFF 0%, #a3afd6 39%, #c97d7d 100%);
