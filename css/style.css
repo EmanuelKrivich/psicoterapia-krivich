@@ -298,12 +298,14 @@
     max-width: 850px; }
 
 .contenedorNosotros {
-  background-color: linear-gradient(180deg, #FFFFFF 0%, #a3afd6 39%, #c97d7d 100%);
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #a3afd6 39%, #c97d7d 100%);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: .5fr .2fr 1fr 1fr .5fr;
+  grid-template-rows: .3fr .1fr 1fr 1fr .3fr;
   grid-template-areas: "menu menu menu menu" "subtitulo subtitulo subtitulo subtitulo" "textoNosotros textoNosotros accordionNosotros accordionNosotros" "textoNosotros textoNosotros formularioNosotros formularioNosotros" "footer footer footer footer";
   height: 100vh; }
+  .contenedorNosotros .subtitulo {
+    margin-left: 62px; }
 
 .textoNosotros {
   grid-area: textoNosotros;
@@ -325,3 +327,5 @@
   flex-direction: column;
   justify-content: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  .accordionNosotros .accordion-item {
+    background-color: #fff7ec; }
