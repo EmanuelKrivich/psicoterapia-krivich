@@ -69,4 +69,10 @@
     .textoInfo {
         display: none;
     }
+
+    .video{
+        iframe{
+            max-width: 100vw;
+        }
+    }
 }

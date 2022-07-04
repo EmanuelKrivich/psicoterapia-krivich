@@ -232,8 +232,10 @@
     height: 100vh; }
   .subtitulo {
     display: none; }
-  .formulario .consultas {
-    display: none; } }
+  .formulario {
+    overflow: scroll; }
+    .formulario .consultas {
+      display: none; } }
 
 .contenedorServicios {
   background-image: linear-gradient(180deg, #FFFFFF 0%, #a3afd6 39%, #c97d7d 100%);
@@ -340,7 +342,9 @@
   .subtitulo {
     display: none; }
   .textoInfo {
-    display: none; } }
+    display: none; }
+  .video iframe {
+    max-width: 100vw; } }
 
 .contenedorNosotros {
   background-image: linear-gradient(180deg, #FFFFFF 0%, #a3afd6 39%, #c97d7d 100%);
