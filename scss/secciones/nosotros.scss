@@ -11,7 +11,7 @@
         "footer footer footer footer";
     height: 100vh;
 
-    .subtitulo{
+    .subtitulo {
         margin-left: 62px;
     }
 }
@@ -39,13 +39,13 @@
     flex-direction: column;
     justify-content: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-    .accordion-item{
+
+    .accordion-item {
         background-color: rgb(255, 247, 236);
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .contenedorNosotros {
         grid-template-rows: .3fr 1fr 1fr .3fr;
         grid-template-areas:
@@ -54,20 +54,20 @@
             "accordionNosotros accordionNosotros accordionNosotros accordionNosotros"
             "footer footer footer footer";
         height: 100vh;
-    
+
     }
 
-    .textoNosotros{
+    .textoNosotros {
         display: flex;
         margin: 0 auto;
         margin-right: 40px;
     }
 
-    .subtitulo{
+    .subtitulo {
         display: none;
     }
 
-    .formularioNosotros{
+    .formularioNosotros {
         display: none;
     }
 

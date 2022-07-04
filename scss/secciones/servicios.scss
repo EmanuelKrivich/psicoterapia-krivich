@@ -31,8 +31,8 @@
 
 
         img:hover {
-            filter: blur(3px);
-            transition: 1s;
+            filter: blur(4px);
+            transition: .7s;
 
         }
 
@@ -96,24 +96,24 @@
     .contenedorServicios {
         grid-template-rows: .2fr 1fr 1fr .3fr;
         grid-template-areas:
-        "menu menu menu menu"
-        "slider-servicios slider-servicios slider-servicios slider-servicios"
-        "slider-servicios slider-servicios slider-servicios slider-servicios"
-        "footer footer footer footer";
+            "menu menu menu menu"
+            "slider-servicios slider-servicios slider-servicios slider-servicios"
+            "slider-servicios slider-servicios slider-servicios slider-servicios"
+            "footer footer footer footer";
         height: 100vh;
     }
 
-    .main{
-        .cards{
-        display: none;
-    }
+    .main {
+        .cards {
+            display: none;
+        }
 
-    .slider-servicios{
-        
-        .card{
-            opacity: .8;
+        .slider-servicios {
+
+            .card {
+                opacity: .8;
+            }
         }
     }
-    }
-    
+
 }

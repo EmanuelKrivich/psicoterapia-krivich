@@ -258,8 +258,8 @@
       display: flex;
       justify-content: center; }
     .main .slider-servicios img:hover {
-      filter: blur(3px);
-      transition: 1s; }
+      filter: blur(4px);
+      transition: .7s; }
     .main .slider-servicios .card {
       color: black;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
