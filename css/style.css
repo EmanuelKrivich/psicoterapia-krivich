@@ -321,6 +321,16 @@
     margin-bottom: 50px;
     max-width: 850px; }
 
+@media (max-width: 480px) {
+  .contenedorInformacion {
+    grid-template-rows: .3fr 1fr 1fr .3fr;
+    grid-template-areas: "menu menu menu menu" "video video video video" "video video video video" "footer footer footer footer";
+    height: 100vh; }
+  .subtitulo {
+    display: none; }
+  .textoInfo {
+    display: none; } }
+
 .contenedorNosotros {
   background-image: linear-gradient(180deg, #FFFFFF 0%, #a3afd6 39%, #c97d7d 100%);
   display: grid;
