@@ -45,11 +45,6 @@
     p {
         @extend %estilosTexto1;
         @include estiloTextos($colorTexto1, $bordeTexto1);
-
-        &:hover {
-            -webkit-animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both;
-            animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both;
-        }
     }
 }
 
@@ -64,11 +59,6 @@
         @extend %estilosTexto2;
         @include estiloTextos($colorTexto2, $bordeTexto2);
     
-
-        &:hover {
-            -webkit-animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both;
-            animation: shadow-drop-2-center .4s cubic-bezier(.25, .46, .45, .94) both
-        }
     }
 }
 

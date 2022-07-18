@@ -6,20 +6,57 @@
     grid-template-areas:
         "menu menu menu menu"
         "subtitulo subtitulo subtitulo subtitulo"
-        "textoNosotros textoNosotros accordionNosotros accordionNosotros"
-        "textoNosotros textoNosotros formularioNosotros formularioNosotros"
+        "textoNosotros textoNosotros cardsNosotros cardsNosotros"
+        "formularioNosotros formularioNosotros cardsNosotros cardsNosotros"
         "footer footer footer footer";
     height: 100vh;
 
     .subtitulo{
         margin-left: 62px;
     }
+
 }
 
+.cardsNosotros{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: .1fr .1fr;
+    grid-template-rows: .1fr .1fr;
+    grid-template-areas: 
+        "card1 card2"
+        "card3 card4";
+
+    margin-right: 100px;
+
+    h5 {
+        text-align: center;
+        color: #505491;
+    }
+
+        .card {
+            background-color: rgb(255, 247, 236);
+            border: $bordeTexto2;
+            max-height: 330px;
+            font-family: Cambria,
+                Cochin,
+                Georgia,
+                Times,
+                'Times New Roman',
+                serif;
+
+            &:hover {
+                @extend %animacionHover;
+            }
+        }
+
+           
+   
+}
 
 .textoNosotros {
     grid-area: textoNosotros;
     max-width: 650px;
+    margin-top: 10px;
 }
 
 .formularioNosotros form {
@@ -28,19 +65,7 @@
     margin-left: 50px;
     padding-left: 10px;
     position: relative;
-    right: 50px;
-    bottom: 20px;
+    right: 620px;
+    top: 400px;
 }
 
-.accordionNosotros {
-    grid-area: accordionNosotros;
-    max-width: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-    .accordion-item{
-        background-color: rgb(255, 247, 236);
-    }
-}
