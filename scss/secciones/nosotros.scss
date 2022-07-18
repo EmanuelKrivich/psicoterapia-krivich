@@ -44,8 +44,11 @@
                 'Times New Roman',
                 serif;
 
+
+            
             &:hover {
                 @extend %animacionHover;
+                
             }
         }
 
