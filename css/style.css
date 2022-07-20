@@ -43,7 +43,7 @@
     -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
-.main .cards .card:hover, .cardsNosotros .card:hover {
+.main .cardsServicios .card:hover, .cardsNosotros .card:hover {
   -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
@@ -168,7 +168,32 @@
     -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35); } }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
+  .contenedorIndex {
+    grid-template-rows: .3fr 1fr 1fr .3fr;
+    grid-template-areas: "menu menu menu menu" "texto2 texto2 imagenTerapia imagenTerapia" "texto2 texto2 imagenTerapia imagenTerapia" "footer footer footer footer"; }
+  .texto1 {
+    display: none; }
+  .texto2 {
+    margin-top: 100px; } }
+
+@media (max-width: 992px) {
+  .contenedorIndex {
+    grid-template-rows: .2fr 1fr 1fr .3fr;
+    grid-template-areas: "menu menu menu menu" "imagenTerapia imagenTerapia imagenTerapia imagenTerapia" "texto2 texto2 texto2 texto2" "footer footer footer footer";
+    height: 100vh; }
+  .texto1 {
+    display: none; }
+  .texto2 {
+    margin: 0 auto; }
+  .imagenTerapia {
+    display: flex; }
+    .imagenTerapia img {
+      margin: 0 auto;
+      margin-top: 10px;
+      width: 60vw; } }
+
+@media (max-width: 576px) {
   .contenedorIndex {
     grid-template-rows: .2fr 1fr 1fr .3fr;
     grid-template-areas: "menu menu menu menu" "imagenTerapia imagenTerapia imagenTerapia imagenTerapia" "texto2 texto2 texto2 texto2" "footer footer footer footer";
@@ -191,14 +216,14 @@
   .subtitulo {
     display: none; } }
 
-.contenedorContacto {
+.contenedorTurnos {
   background-image: linear-gradient(180deg, #FFFFFF 0%, #a3afd6 39%, #c97d7d 100%);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: .3fr .1fr 1fr 1fr .3fr;
   grid-template-areas: "menu menu menu menu" "subtitulo subtitulo subtitulo subtitulo" "formulario formulario formulario formulario" "formulario formulario formulario formulario" "footer footer footer footer";
   height: 100vh; }
-  .contenedorContacto .subtitulo {
+  .contenedorTurnos .subtitulo {
     margin-left: 62px; }
 
 .formulario {
@@ -219,8 +244,28 @@
     padding: 5px;
     height: 15vh; }
 
-@media (max-width: 480px) {
-  .contenedorContacto {
+@media (max-width: 1200px) {
+  .contenedorTurnos {
+    grid-template-rows: .3fr 1fr 1fr .3fr;
+    grid-template-areas: "menu menu menu menu" "formulario formulario formulario formulario" "formulario formulario formulario formulario" "footer footer footer footer"; }
+  .subtitulo {
+    display: none; }
+  .menu ul {
+    font-size: 1rem; } }
+
+@media (max-width: 992px) {
+  .contenedorTurnos {
+    grid-template-rows: .3fr 1fr 1fr .3fr;
+    grid-template-areas: "menu menu menu menu" "formulario formulario formulario formulario" "formulario formulario formulario formulario" "footer footer footer footer"; }
+  .subtitulo {
+    display: none; }
+  .menu ul {
+    font-size: 1rem; }
+  .consultas {
+    display: none; } }
+
+@media (max-width: 576px) {
+  .contenedorTurnos {
     grid-template-rows: .3fr 1fr 1fr .3fr;
     grid-template-areas: "menu menu menu menu" "formulario formulario formulario formulario" "formulario formulario formulario formulario" "footer footer footer footer";
     height: 100vh; }
@@ -236,7 +281,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: .3fr 1fr 1fr .3fr;
-  grid-template-areas: "menu menu menu menu" "slider-servicios slider-servicios cards cards" "slider-servicios slider-servicios cards cards" "footer footer footer footer";
+  grid-template-areas: "menu menu menu menu" "slider-servicios slider-servicios cardsServicios cardsServicios" "slider-servicios slider-servicios cardsServicios cardsServicios" "footer footer footer footer";
   height: 100vh; }
 
 .main {
@@ -266,7 +311,7 @@
       .main .slider-servicios .card:hover {
         opacity: 1;
         transition: 1s; }
-  .main .cards {
+  .main .cardsServicios {
     grid-area: cards;
     margin-top: 50px;
     display: grid;
@@ -274,20 +319,21 @@
     grid-template-columns: .1fr .1fr;
     grid-template-rows: .1fr .1fr;
     grid-template-areas: "card1 card2" "card3 card4"; }
-    .main .cards h5 {
-      text-align: center;
+    .main .cardsServicios h5 {
       color: #505491; }
-    .main .cards .card {
+    .main .cardsServicios .card {
       background-color: #fff7ec;
       border: solid #505491;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+      .main .cardsServicios .card .card-body {
+        text-align: center; }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .contenedorServicios {
     grid-template-rows: .2fr 1fr 1fr .3fr;
     grid-template-areas: "menu menu menu menu" "slider-servicios slider-servicios slider-servicios slider-servicios" "slider-servicios slider-servicios slider-servicios slider-servicios" "footer footer footer footer";
     height: 100vh; }
-  .main .cards {
+  .main .cardsServicios {
     display: none; }
   .main .slider-servicios .card {
     opacity: .8; } }
@@ -329,7 +375,7 @@
     margin-bottom: 50px;
     max-width: 850px; }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .contenedorInformacion {
     grid-template-rows: .3fr 1fr 1fr .3fr;
     grid-template-areas: "menu menu menu menu" "video video video video" "video video video video" "footer footer footer footer";
@@ -381,15 +427,18 @@
   right: 620px;
   top: 400px; }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .contenedorNosotros {
     grid-template-rows: .3fr 1fr 1fr .3fr;
-    grid-template-areas: "menu menu menu menu" "textoNosotros textoNosotros textoNosotros textoNosotros" "accordionNosotros accordionNosotros accordionNosotros accordionNosotros" "footer footer footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "menu menu " "textoNosotros textoNosotros" "formularioNosotros formularioNosotros" "footer footer";
     height: 100vh; }
   .textoNosotros {
     display: flex;
     margin: 0 auto;
     margin-right: 40px; }
+  .cardsNosotros {
+    display: none; }
   .subtitulo {
     display: none; }
   .formularioNosotros {
