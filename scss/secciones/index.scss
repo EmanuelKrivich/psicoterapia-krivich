@@ -98,7 +98,7 @@
 
 // MEDIA QUERY
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     .contenedorIndex {
         grid-template-rows: .3fr 1fr 1fr .3fr;
         grid-template-areas:
@@ -106,16 +106,19 @@
             "texto2 texto2 imagenTerapia imagenTerapia"
             "texto2 texto2 imagenTerapia imagenTerapia"
             "footer footer footer footer";
+
+        .texto1 {
+            display: none;
+        }
+
+        .texto2 {
+            margin-top: 100px;
+
+        }
+
     }
 
-    .texto1{
-        display: none;
-    }
 
-    .texto2{
-        margin-top: 100px;
-        
-    }
 }
 
 @media (max-width: 992px) {
@@ -127,26 +130,28 @@
             "texto2 texto2 texto2 texto2"
             "footer footer footer footer";
         height: 100vh;
-    }
 
-    .texto1 {
-        display: none;
-    }
-
-    .texto2{
-        margin: 0 auto;
-    }
-
-    .imagenTerapia {
-        display: flex;
-
-        img {
-            margin: 0 auto;
-            margin-top: 10px;
-            width: 60vw;
+        .texto1 {
+            display: none;
         }
 
+        .texto2 {
+            margin: 0 auto;
+        }
+
+        .imagenTerapia {
+            display: flex;
+
+            img {
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 60vw;
+            }
+
+        }
     }
+
+
 }
 
 @media (max-width: 576px) {
@@ -158,39 +163,40 @@
             "texto2 texto2 texto2 texto2"
             "footer footer footer footer";
         height: 100vh;
-    }
 
-    .imagenTerapia {
-        display: flex;
+        .imagenTerapia {
+            display: flex;
 
-        img {
-            margin: 0 auto;
-            margin-top: 10px;
-            width: 80vw;
+            img {
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 80vw;
+            }
+
         }
 
-    }
-
-    .texto1 {
-        display: none;
-    }
-
-    .texto2 {
-        margin: 0 auto;
-        overflow: scroll;
-
-        p {
-            max-width: 378px;
-            margin: 0 auto;
-            margin-top: 20px;
+        .texto1 {
+            display: none;
         }
 
+        .texto2 {
+            margin: 0 auto;
+            overflow: scroll;
+
+            p {
+                max-width: 378px;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+
+        }
+
+        .subtitulo {
+            display: none;
+        }
+
+
     }
 
-    .subtitulo {
-        display: none;
-    }
+
 }
-
-
-

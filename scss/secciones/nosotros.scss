@@ -14,46 +14,45 @@
     .subtitulo {
         margin-left: 62px;
     }
-
 }
 
-.cardsNosotros{
+.cardsNosotros {
     display: grid;
     gap: 20px;
     grid-template-columns: .1fr .1fr;
     grid-template-rows: .1fr .1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "card1 card2"
         "card3 card4";
 
-    margin-right: 100px;
+    margin-right: 200px;
 
     h5 {
         text-align: center;
         color: #505491;
     }
 
-        .card {
-            background-color: rgb(255, 247, 236);
-            border: $bordeTexto2;
-            max-height: 330px;
-            font-family: Cambria,
-                Cochin,
-                Georgia,
-                Times,
-                'Times New Roman',
-                serif;
+    .card {
+        background-color: rgb(255, 247, 236);
+        border: $bordeTexto2;
+        max-height: 330px;
+        font-family: Cambria,
+            Cochin,
+            Georgia,
+            Times,
+            'Times New Roman',
+            serif;
 
 
-            
-            &:hover {
-                @extend %animacionHover;
-                
-            }
+
+        &:hover {
+            @extend %animacionHover;
+
         }
+    }
 
-           
-   
+
+
 }
 
 
@@ -69,10 +68,11 @@
     margin-left: 50px;
     padding-left: 10px;
     position: relative;
-    right: 620px;
+    right: 520px;
     top: 400px;
 }
 
+// MEDIA QUERY    
 
 @media (max-width: 576px) {
     .contenedorNosotros {
@@ -93,7 +93,7 @@
         margin-right: 40px;
     }
 
-    .cardsNosotros{
+    .cardsNosotros {
         display: none;
     }
 
@@ -102,7 +102,11 @@
     }
 
     .formularioNosotros {
-    display: none;
+        overflow: scroll;
+        min-width: 430px;
+        form {
+            position: inherit;
+        }
     }
 
 }

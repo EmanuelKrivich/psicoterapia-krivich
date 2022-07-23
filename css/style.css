@@ -172,49 +172,49 @@
   .contenedorIndex {
     grid-template-rows: .3fr 1fr 1fr .3fr;
     grid-template-areas: "menu menu menu menu" "texto2 texto2 imagenTerapia imagenTerapia" "texto2 texto2 imagenTerapia imagenTerapia" "footer footer footer footer"; }
-  .texto1 {
-    display: none; }
-  .texto2 {
-    margin-top: 100px; } }
+    .contenedorIndex .texto1 {
+      display: none; }
+    .contenedorIndex .texto2 {
+      margin-top: 100px; } }
 
 @media (max-width: 992px) {
   .contenedorIndex {
     grid-template-rows: .2fr 1fr 1fr .3fr;
     grid-template-areas: "menu menu menu menu" "imagenTerapia imagenTerapia imagenTerapia imagenTerapia" "texto2 texto2 texto2 texto2" "footer footer footer footer";
     height: 100vh; }
-  .texto1 {
-    display: none; }
-  .texto2 {
-    margin: 0 auto; }
-  .imagenTerapia {
-    display: flex; }
-    .imagenTerapia img {
-      margin: 0 auto;
-      margin-top: 10px;
-      width: 60vw; } }
+    .contenedorIndex .texto1 {
+      display: none; }
+    .contenedorIndex .texto2 {
+      margin: 0 auto; }
+    .contenedorIndex .imagenTerapia {
+      display: flex; }
+      .contenedorIndex .imagenTerapia img {
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 60vw; } }
 
 @media (max-width: 576px) {
   .contenedorIndex {
     grid-template-rows: .2fr 1fr 1fr .3fr;
     grid-template-areas: "menu menu menu menu" "imagenTerapia imagenTerapia imagenTerapia imagenTerapia" "texto2 texto2 texto2 texto2" "footer footer footer footer";
     height: 100vh; }
-  .imagenTerapia {
-    display: flex; }
-    .imagenTerapia img {
+    .contenedorIndex .imagenTerapia {
+      display: flex; }
+      .contenedorIndex .imagenTerapia img {
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 80vw; }
+    .contenedorIndex .texto1 {
+      display: none; }
+    .contenedorIndex .texto2 {
       margin: 0 auto;
-      margin-top: 10px;
-      width: 80vw; }
-  .texto1 {
-    display: none; }
-  .texto2 {
-    margin: 0 auto;
-    overflow: scroll; }
-    .texto2 p {
-      max-width: 378px;
-      margin: 0 auto;
-      margin-top: 20px; }
-  .subtitulo {
-    display: none; } }
+      overflow: scroll; }
+      .contenedorIndex .texto2 p {
+        max-width: 378px;
+        margin: 0 auto;
+        margin-top: 20px; }
+    .contenedorIndex .subtitulo {
+      display: none; } }
 
 .contenedorTurnos {
   background-image: linear-gradient(180deg, #FFFFFF 0%, #a3afd6 39%, #c97d7d 100%);
@@ -328,6 +328,10 @@
       .main .cardsServicios .card .card-body {
         text-align: center; }
 
+@media (max-width: 992px) {
+  .main .cardsServicios {
+    display: none; } }
+
 @media (max-width: 576px) {
   .contenedorServicios {
     grid-template-rows: .2fr 1fr 1fr .3fr;
@@ -375,6 +379,31 @@
     margin-bottom: 50px;
     max-width: 850px; }
 
+@media (max-width: 1200px) {
+  .textoInfo {
+    position: relative;
+    right: 100px; }
+  .textoInfo2 {
+    display: none; }
+  .video {
+    position: relative;
+    right: 50px; } }
+
+@media (max-width: 992px) {
+  .contenedorInformacion {
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #a3afd6 39%, #c97d7d 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .3fr 1fr 1fr .3fr;
+    grid-template-areas: "menu menu menu menu" "video video video video" "video video video video" "footer footer footer footer"; }
+    .contenedorInformacion .subtitulo {
+      display: none; }
+    .contenedorInformacion .textoInfo {
+      display: none; }
+    .contenedorInformacion .video {
+      align-items: center;
+      position: inherit; } }
+
 @media (max-width: 576px) {
   .contenedorInformacion {
     grid-template-rows: .3fr 1fr 1fr .3fr;
@@ -403,7 +432,7 @@
   grid-template-columns: .1fr .1fr;
   grid-template-rows: .1fr .1fr;
   grid-template-areas: "card1 card2" "card3 card4";
-  margin-right: 100px; }
+  margin-right: 200px; }
   .cardsNosotros h5 {
     text-align: center;
     color: #505491; }
@@ -424,7 +453,7 @@
   margin-left: 50px;
   padding-left: 10px;
   position: relative;
-  right: 620px;
+  right: 520px;
   top: 400px; }
 
 @media (max-width: 576px) {
@@ -442,4 +471,7 @@
   .subtitulo {
     display: none; }
   .formularioNosotros {
-    display: none; } }
+    overflow: scroll;
+    min-width: 430px; }
+    .formularioNosotros form {
+      position: inherit; } }
